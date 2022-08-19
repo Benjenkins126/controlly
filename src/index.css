@@ -1,3 +1,242 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body, html, #root {
+    width: 100%;
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('assets/fonts/Metropolis-ExtraBold.eot');
+    src: url('assets/fonts/Metropolis-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Metropolis-ExtraBold.woff2') format('woff2'),
+        url('assets/fonts/Metropolis-ExtraBold.woff') format('woff'),
+        url('assets/fonts/Metropolis-ExtraBold.ttf') format('truetype'),
+        url('assets/fonts/Metropolis-ExtraBold.svg#Metropolis-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('assets/fonts/Metropolis-Black.eot');
+    src: url('assets/fonts/Metropolis-Black.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Metropolis-Black.woff2') format('woff2'),
+        url('assets/fonts/Metropolis-Black.woff') format('woff'),
+        url('assets/fonts/Metropolis-Black.ttf') format('truetype'),
+        url('assets/fonts/Metropolis-Black.svg#Metropolis-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('assets/fonts/Metropolis-Bold.eot');
+    src: url('assets/fonts/Metropolis-Bold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Metropolis-Bold.woff2') format('woff2'),
+        url('assets/fonts/Metropolis-Bold.woff') format('woff'),
+        url('assets/fonts/Metropolis-Bold.ttf') format('truetype'),
+        url('assets/fonts/Metropolis-Bold.svg#Metropolis-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('assets/fonts/Metropolis-BlackItalic.eot');
+    src: url('assets/fonts/Metropolis-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Metropolis-BlackItalic.woff2') format('woff2'),
+        url('assets/fonts/Metropolis-BlackItalic.woff') format('woff'),
+        url('assets/fonts/Metropolis-BlackItalic.ttf') format('truetype'),
+        url('assets/fonts/Metropolis-BlackItalic.svg#Metropolis-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('assets/fonts/Metropolis-BoldItalic.eot');
+    src: url('assets/fonts/Metropolis-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Metropolis-BoldItalic.woff2') format('woff2'),
+        url('assets/fonts/Metropolis-BoldItalic.woff') format('woff'),
+        url('assets/fonts/Metropolis-BoldItalic.ttf') format('truetype'),
+        url('assets/fonts/Metropolis-BoldItalic.svg#Metropolis-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis Extra';
+    src: url('assets/fonts/Metropolis-ExtraBoldItalic.eot');
+    src: url('assets/fonts/Metropolis-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Metropolis-ExtraBoldItalic.woff2') format('woff2'),
+        url('assets/fonts/Metropolis-ExtraBoldItalic.woff') format('woff'),
+        url('assets/fonts/Metropolis-ExtraBoldItalic.ttf') format('truetype'),
+        url('assets/fonts/Metropolis-ExtraBoldItalic.svg#Metropolis-ExtraBoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('assets/fonts/Metropolis-Thin.eot');
+    src: url('assets/fonts/Metropolis-Thin.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Metropolis-Thin.woff2') format('woff2'),
+        url('assets/fonts/Metropolis-Thin.woff') format('woff'),
+        url('assets/fonts/Metropolis-Thin.ttf') format('truetype'),
+        url('assets/fonts/Metropolis-Thin.svg#Metropolis-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('assets/fonts/Metropolis-Regular.eot');
+    src: url('assets/fonts/Metropolis-Regular.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Metropolis-Regular.woff2') format('woff2'),
+        url('assets/fonts/Metropolis-Regular.woff') format('woff'),
+        url('assets/fonts/Metropolis-Regular.ttf') format('truetype'),
+        url('assets/fonts/Metropolis-Regular.svg#Metropolis-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('assets/fonts/Metropolis-Medium.eot');
+    src: url('assets/fonts/Metropolis-Medium.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Metropolis-Medium.woff2') format('woff2'),
+        url('assets/fonts/Metropolis-Medium.woff') format('woff'),
+        url('assets/fonts/Metropolis-Medium.ttf') format('truetype'),
+        url('assets/fonts/Metropolis-Medium.svg#Metropolis-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('assets/fonts/Metropolis-MediumItalic.eot');
+    src: url('assets/fonts/Metropolis-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Metropolis-MediumItalic.woff2') format('woff2'),
+        url('assets/fonts/Metropolis-MediumItalic.woff') format('woff'),
+        url('assets/fonts/Metropolis-MediumItalic.ttf') format('truetype'),
+        url('assets/fonts/Metropolis-MediumItalic.svg#Metropolis-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('assets/fonts/Metropolis-ThinItalic.eot');
+    src: url('assets/fonts/Metropolis-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Metropolis-ThinItalic.woff2') format('woff2'),
+        url('assets/fonts/Metropolis-ThinItalic.woff') format('woff'),
+        url('assets/fonts/Metropolis-ThinItalic.ttf') format('truetype'),
+        url('assets/fonts/Metropolis-ThinItalic.svg#Metropolis-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis Semi';
+    src: url('assets/fonts/Metropolis-SemiBold.eot');
+    src: url('assets/fonts/Metropolis-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Metropolis-SemiBold.woff2') format('woff2'),
+        url('assets/fonts/Metropolis-SemiBold.woff') format('woff'),
+        url('assets/fonts/Metropolis-SemiBold.ttf') format('truetype'),
+        url('assets/fonts/Metropolis-SemiBold.svg#Metropolis-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('assets/fonts/Metropolis-LightItalic.eot');
+    src: url('assets/fonts/Metropolis-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Metropolis-LightItalic.woff2') format('woff2'),
+        url('assets/fonts/Metropolis-LightItalic.woff') format('woff'),
+        url('assets/fonts/Metropolis-LightItalic.ttf') format('truetype'),
+        url('assets/fonts/Metropolis-LightItalic.svg#Metropolis-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis Semi';
+    src: url('assets/fonts/Metropolis-SemiBoldItalic.eot');
+    src: url('assets/fonts/Metropolis-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Metropolis-SemiBoldItalic.woff2') format('woff2'),
+        url('assets/fonts/Metropolis-SemiBoldItalic.woff') format('woff'),
+        url('assets/fonts/Metropolis-SemiBoldItalic.ttf') format('truetype'),
+        url('assets/fonts/Metropolis-SemiBoldItalic.svg#Metropolis-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis Extra';
+    src: url('assets/fonts/Metropolis-ExtraLightItalic.eot');
+    src: url('assets/fonts/Metropolis-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Metropolis-ExtraLightItalic.woff2') format('woff2'),
+        url('assets/fonts/Metropolis-ExtraLightItalic.woff') format('woff'),
+        url('assets/fonts/Metropolis-ExtraLightItalic.ttf') format('truetype'),
+        url('assets/fonts/Metropolis-ExtraLightItalic.svg#Metropolis-ExtraLightItalic') format('svg');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('assets/fonts/Metropolis-Light.eot');
+    src: url('assets/fonts/Metropolis-Light.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Metropolis-Light.woff2') format('woff2'),
+        url('assets/fonts/Metropolis-Light.woff') format('woff'),
+        url('assets/fonts/Metropolis-Light.ttf') format('truetype'),
+        url('assets/fonts/Metropolis-Light.svg#Metropolis-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis Extra';
+    src: url('assets/fonts/Metropolis-ExtraLight.eot');
+    src: url('assets/fonts/Metropolis-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Metropolis-ExtraLight.woff2') format('woff2'),
+        url('assets/fonts/Metropolis-ExtraLight.woff') format('woff'),
+        url('assets/fonts/Metropolis-ExtraLight.ttf') format('truetype'),
+        url('assets/fonts/Metropolis-ExtraLight.svg#Metropolis-ExtraLight') format('svg');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('assets/fonts/Metropolis-RegularItalic.eot');
+    src: url('assets/fonts/Metropolis-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('assets/fonts/Metropolis-RegularItalic.woff2') format('woff2'),
+        url('assets/fonts/Metropolis-RegularItalic.woff') format('woff'),
+        url('assets/fonts/Metropolis-RegularItalic.ttf') format('truetype'),
+        url('assets/fonts/Metropolis-RegularItalic.svg#Metropolis-RegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
