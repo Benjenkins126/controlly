@@ -1,11 +1,11 @@
 import React from 'react';
-import logo from './logo.svg';
+import Main from './router/Main';
 
 function App() {
   return (
-    <div className="App">
-      Page
-    </div>
+    <>
+      <Main />
+    </>
   );
 }
 
