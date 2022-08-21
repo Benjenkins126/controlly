@@ -15,13 +15,20 @@ module.exports = {
       },
       colors: {
         backgroundColor: '#1C133B',
-        purpleControlly: '#6747E8'
+        purpleControlly: '#6747E8',
+        redError: '#FF0000',
+        greenSuccess: '#1DC356',
+        primaryAlert: 'rgba(103, 71, 232, .2)'
+
       },
       boxShadow: {
         'card': '0 3px 6px rgba(0, 0, 0, .03)',
       },
       fontFamily: {
         'sans': ['Metropolis', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+      },
+      fontSize: {
+        'xxs': '10px',
       }
     },
   },
