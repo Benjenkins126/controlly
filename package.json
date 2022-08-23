@@ -17,6 +17,8 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.3.0",
     "react-scripts": "5.0.1",
+    "reactjs-popup": "^2.0.5",
+    "rodal": "^1.8.3",
     "typescript": "^4.7.4",
     "web-vitals": "^2.1.4"
   },

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="119" height="119" viewBox="0 0 119 119">
+  <defs>
+    <filter id="lightbulb-solid_1_" x="10.334" y="-6" width="99.821" height="137" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#be8704" flood-opacity="0.345"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-light-on">
+      <rect width="119" height="119"/>
+    </clipPath>
+  </defs>
+  <g id="light-on" clip-path="url(#clip-light-on)">
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#lightbulb-solid_1_)">
+      <path id="lightbulb-solid_1_2" data-name="lightbulb-solid (1)" d="M38.338,105.61a7.448,7.448,0,0,0,1.228,4.112l3.984,5.972a8.312,8.312,0,0,0,6.192,3.319H64.078a8.308,8.308,0,0,0,6.185-3.319l3.97-5.969a8.762,8.762,0,0,0,1.243-4.114l.03-9.112H38.315ZM56.771.013A40.737,40.737,0,0,0,26.125,67.628c3.842,4.379,9.842,13.535,12.138,21.257.007.058.022.12.029.182H75.531c.007-.062.022-.12.029-.182,2.3-7.722,8.3-16.878,12.138-21.257A39.863,39.863,0,0,0,97.821,40.711,40.867,40.867,0,0,0,56.771.013Zm.139,22.314a18.571,18.571,0,0,0-18.6,18.386A3.78,3.78,0,0,1,34.6,44.639a3.73,3.73,0,0,1-3.719-3.719A25.886,25.886,0,0,1,56.91,15.1a3.717,3.717,0,0,1,3.719,3.719A3.553,3.553,0,0,1,56.91,22.327Z" transform="translate(3.33 -0.01)"/>
+    </g>
+    <path id="Intersection_2" data-name="Intersection 2" d="M22.291,89.052c0-.062-.022-.124-.027-.181-2.3-7.722-8.3-16.875-12.136-21.255A40.845,40.845,0,1,1,81.822,40.7,39.864,39.864,0,0,1,71.7,67.615C67.855,72,61.852,81.149,59.558,88.871c-.008.062-.022.119-.03.181ZM14.873,40.906a3.734,3.734,0,0,0,3.721,3.722A3.78,3.78,0,0,0,22.313,40.7a18.575,18.575,0,0,1,18.6-18.387A3.551,3.551,0,0,0,44.629,18.8a3.719,3.719,0,0,0-3.718-3.722A25.889,25.889,0,0,0,14.873,40.906Z" transform="translate(19.336 0.001)" fill="#f3e7cc" stroke="#d8cbad" stroke-width="0.4"/>
+  </g>
+</svg>
