@@ -7,6 +7,8 @@ import StepThree from '../pages/setup/step-three';
 import StepTwo from '../pages/setup/step-two';
 import Devices from '../pages/Devices';
 import DevicesFound from '../pages/Devices-Found';
+import Groups from "../pages/Groups";
+import DevicesManual from '../pages/Devices-Manual';
 
 const Main = () => {
     return (
@@ -17,6 +19,8 @@ const Main = () => {
             <Route path='/setup/step-three' element={<StepThree/>} />
             <Route path='/devices' element={<Devices />} />
             <Route path="/devices-found" element={<DevicesFound />} />
+            <Route path='/devices-manual' element={<DevicesManual />} />
+            <Route path='/groups' element={<Groups />} />
             <Route path='/permission-error' element={<PermissionError/>} />
         </Routes>
     );

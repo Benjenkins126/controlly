@@ -41,6 +41,9 @@ module.exports = {
       },
       gridTemplateRows: {
         'masonary': 'masonary',
+      },
+      minHeight: {
+        'group': '240px',
       }
     },
   },

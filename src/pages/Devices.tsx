@@ -35,7 +35,6 @@ const Devices = () => {
 
     const removeDevice = () => {
         setRemoveModalOpen(true);
-        return true;
     }
 
     const cancelModal = () => {
