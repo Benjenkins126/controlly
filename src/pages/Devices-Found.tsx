@@ -1,10 +1,14 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import DashboardLayout from "../components/layout/DashboardLayout";
 
 import LightOff from "../assets/img/devices/light-off.svg";
 import DeviceFoundVisual from "../components/devices/DeviceFoundVisual";
+import Modal from "../components/ui/modal/Modal";
+import LoadingBar from "../components/ui/progress-bar/LoadingBar";
 
 const DevicesFound = () => {
+    const [addDeviceOpen, setAddDeviceOpen] = useState(false);
+
     let breadcrumbsPast = ["Home", "Configuration"];
 
     let tabsList = [
@@ -26,6 +30,10 @@ const DevicesFound = () => {
         }
     ];
 
+    const addingGroup = () => {
+        setAddDeviceOpen(true);
+    }
+
     useEffect(() => {
         document.title = "Controlly - Devices Found";
     });
@@ -43,21 +51,26 @@ const DevicesFound = () => {
             tabs={tabsList}
         >
             <div className="grid grid-cols-6 gap-5">
-                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" />
-                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" />
-                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" />
-                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" />
-                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" />
-                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" />
-                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" />
-                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" />
-                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" />
-                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" />
-                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" />
-                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" />
-                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" />
-                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" />
+                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" addEvent={addingGroup} />
+                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" addEvent={addingGroup} />
+                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" addEvent={addingGroup} />
+                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" addEvent={addingGroup} />
+                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" addEvent={addingGroup} />
+                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" addEvent={addingGroup} />
+                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" addEvent={addingGroup} />
+                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" addEvent={addingGroup} />
+                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" addEvent={addingGroup} />
+                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" addEvent={addingGroup} />
+                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" addEvent={addingGroup} />
+                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" addEvent={addingGroup} />
+                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" addEvent={addingGroup} />
+                <DeviceFoundVisual image={LightOff} id="bedroom_1" integration="Philips Hue" name="Bedroom 1" addEvent={addingGroup} />
             </div>
+
+            <Modal show={addDeviceOpen}>
+                <h3 className="font-sans font-medium text-base text-center">Adding Device...</h3>
+                <LoadingBar />
+            </Modal>
         </DashboardLayout>
     );
 }

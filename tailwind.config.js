@@ -23,7 +23,10 @@ module.exports = {
         greenSuccess: '#1DC356',
         primaryAlert: 'rgba(103, 71, 232, .2)',
         bgContent: '#F7F7F7',
-        dangerRed: '#E84747'
+        dangerRed: '#E84747',
+        startGreen: '#1E963E',
+        restartAmber: '#FFB07E',
+        stopRed: '#CB3333'
 
       },
       boxShadow: {

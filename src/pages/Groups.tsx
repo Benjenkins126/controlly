@@ -7,6 +7,7 @@ import GroupItem from "../components/groups/GroupItem";
 import Modal from "../components/ui/modal/Modal";
 import DangerButton from "../components/ui/buttons/DangerButton";
 import SecondaryButton from "../components/ui/buttons/SecondaryButton";
+import PrimaryButton from "../components/ui/buttons/PrimaryButton";
 
 const Groups = () => {
     
@@ -61,6 +62,7 @@ const Groups = () => {
             breadcrumbsPast={breadcrumbsPast}
             tabs={tabsList}
         >
+            <PrimaryButton text="+ Add Group" id="Create_Group" classes="mb-4"></PrimaryButton>
             <div className="gap-5 grid grid-cols-2">
                 <GroupItem name="Downstairs Lights" devices={groupDemoDevices} id="downstairs_lights" openModal={removeGroup} />
                 <GroupItem name="Bedroom Lights" devices={groupDemoDevices} id="bedroom_lights" openModal={removeGroup} />
