@@ -24,6 +24,10 @@ const IntegrationLogs = () => {
         }
     ];
 
+    useEffect(() => {
+        document.title = "Controlly - Philips Hue Logs";
+    });
+
     return (
         <DashboardLayout
             title="Philips Hue Logs"
