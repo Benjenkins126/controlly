@@ -13,6 +13,7 @@ import Integrations from '../pages/Integrations';
 import DisabledIntegrations from '../pages/Disabled-Integrations';
 import ConfiguringHome from '../pages/setup/configuring-home';
 import IntegrationLogs from '../pages/Integration-Logs';
+import EditGroup from '../pages/Edit-Group';
 
 const Main = () => {
     return (
@@ -26,6 +27,7 @@ const Main = () => {
             <Route path="/devices-found" element={<DevicesFound />} />
             <Route path='/devices-manual' element={<DevicesManual />} />
             <Route path='/groups' element={<Groups />} />
+            <Route path="/edit-group" element={<EditGroup />} />
             <Route path='/integrations' element={<Integrations />} />
             <Route path='/integration-logs' element={<IntegrationLogs />} />
             <Route path='/disabled-integrations' element={<DisabledIntegrations />} />
