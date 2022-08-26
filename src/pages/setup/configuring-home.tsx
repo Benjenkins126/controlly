@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import logo from "../../assets/img/Controlly-Panel-Logo.svg";
 import SetupCard from "../../components/setup/SetupCard";
-import SetupSectionTitle from "../../components/setup/SetupSectionTitle";
 import LoadingBar from "../../components/ui/progress-bar/LoadingBar";
 
 const ConfiguringHome = () => {

@@ -9,9 +9,10 @@ import Devices from '../pages/Devices';
 import DevicesFound from '../pages/Devices-Found';
 import Groups from "../pages/Groups";
 import DevicesManual from '../pages/Devices-Manual';
-import Integrations from '../pages/integrations';
-import DisabledIntegrations from '../pages/disabled-integrations';
+import Integrations from '../pages/Integrations';
+import DisabledIntegrations from '../pages/Disabled-Integrations';
 import ConfiguringHome from '../pages/setup/configuring-home';
+import IntegrationLogs from '../pages/Integration-Logs';
 
 const Main = () => {
     return (
@@ -26,6 +27,7 @@ const Main = () => {
             <Route path='/devices-manual' element={<DevicesManual />} />
             <Route path='/groups' element={<Groups />} />
             <Route path='/integrations' element={<Integrations />} />
+            <Route path='/integration-logs' element={<IntegrationLogs />} />
             <Route path='/disabled-integrations' element={<DisabledIntegrations />} />
             <Route path='/permission-error' element={<PermissionError/>} />
         </Routes>

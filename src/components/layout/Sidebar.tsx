@@ -44,19 +44,19 @@ const Sidebar = (props: SidebarProps) => {
             <div className="pb-8">
                 <SidebarCategory>Site</SidebarCategory>
                 {/* Dropdown Nav Item */}
-                <SidebarDropdown active={false} name="Dashboards" icon={DashboardsIcon} links={[{name: "Downstairs 1", route: "/dashboard/downstairs-1"},{name: "Kitchen Tablet", route: "/dashboard/kitchen-tablet"},{name: "Bedroom [New]", route: "/dashboard/bedroom-new"}]} />
+                <SidebarDropdown active={props.active === "Dashboards"} name="Dashboards" icon={DashboardsIcon} links={[{name: "Downstairs 1", route: "/dashboard/downstairs-1"},{name: "Kitchen Tablet", route: "/dashboard/kitchen-tablet"},{name: "Bedroom [New]", route: "/dashboard/bedroom-new"}]} />
 
                 <SidebarCategory>Configuration</SidebarCategory>
-                <SidebarItem active={true} name="Devices" route="/devices" icon={DevicesIcon} />
-                <SidebarItem active={false} name="Groups" route="/groups" icon={GroupsIcon} />
-                <SidebarItem active={false} name="Automations" route="/automations" icon={AutomationsIcon} />
-                <SidebarItem active={false} name="Widgets" route="/widgets" icon={WidgetsIcon} />
-                <SidebarItem active={false} name="Integrations" route="/integrations" icon={IntegrationsIcon} />
+                <SidebarItem active={props.active === "Devices"} name="Devices" route="/devices" icon={DevicesIcon} />
+                <SidebarItem active={props.active === "Groups"} name="Groups" route="/groups" icon={GroupsIcon} />
+                <SidebarItem active={props.active === "Automations"} name="Automations" route="/automations" icon={AutomationsIcon} />
+                <SidebarItem active={props.active === "Widgets"} name="Widgets" route="/widgets" icon={WidgetsIcon} />
+                <SidebarItem active={props.active === "Integrations"} name="Integrations" route="/integrations" icon={IntegrationsIcon} />
 
                 <SidebarCategory>Maintenance</SidebarCategory>
-                <SidebarItem active={false} name="Theme Configuration" route="/theme-configuration" icon={ThemeConfigurationIcon} />
-                <SidebarItem active={false} name="Display Controllers" route="/display-controllers" icon={DisplayControllersIcon} />
-                <SidebarItem active={false} name="Settings" route="/settings" icon={SettingsIcon} />
+                <SidebarItem active={props.active === "Theme Configuration"} name="Theme Configuration" route="/theme-configuration" icon={ThemeConfigurationIcon} />
+                <SidebarItem active={props.active === "Display Controllers"} name="Display Controllers" route="/display-controllers" icon={DisplayControllersIcon} />
+                <SidebarItem active={props.active === "Settings"} name="Settings" route="/settings" icon={SettingsIcon} />
 
                 <SidebarCategory>Help</SidebarCategory>
                 <SidebarItem active={false} name="Documentation" route="https://docs.controlly.co.uk" icon={DocumentationIcon} />

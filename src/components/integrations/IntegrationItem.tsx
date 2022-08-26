@@ -9,6 +9,7 @@ interface IntegrationItemProps {
     name: string;
     logo: any;
     active: Boolean;
+    removeEvent?: any;
 }
 
 const IntegrationItem = (props: IntegrationItemProps) => {
@@ -24,7 +25,7 @@ const IntegrationItem = (props: IntegrationItemProps) => {
             <hr className="border-none bg-black/10 my-5 h-0.5" />
             {props.active ? <PrimaryButton text="Logs" id={"Logs_" + props.id} url="/integration-logs" classes="w-full !py-1 border-2 border-purpleControlly block text-center text-base" /> : ''}
             <PrimaryButton text="Configure" id={"Configure_" + props.id} url="/configure-integration" classes="w-full !py-1 border-2 border-purpleControlly block text-center text-base !mt-2" />
-            <DangerButton id={"Remove_" + props.id} classes="py-1 !mt-2">Remove</DangerButton>
+            <DangerButton id={"Remove_" + props.id} classes="py-1 !mt-2" clickEvent={props.removeEvent}>Remove</DangerButton>
         </div>
     );
 }
