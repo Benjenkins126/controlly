@@ -14,6 +14,7 @@ import DisabledIntegrations from '../pages/Disabled-Integrations';
 import ConfiguringHome from '../pages/setup/configuring-home';
 import IntegrationLogs from '../pages/Integration-Logs';
 import EditGroup from '../pages/Edit-Group';
+import Automations from '../pages/Automations';
 
 const Main = () => {
     return (
@@ -31,6 +32,7 @@ const Main = () => {
             <Route path='/integrations' element={<Integrations />} />
             <Route path='/integration-logs' element={<IntegrationLogs />} />
             <Route path='/disabled-integrations' element={<DisabledIntegrations />} />
+            <Route path='/automations' element={<Automations />} />
             <Route path='/permission-error' element={<PermissionError/>} />
         </Routes>
     );

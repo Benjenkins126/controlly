@@ -69,7 +69,7 @@ const Groups = () => {
             breadcrumbsPast={breadcrumbsPast}
             tabs={tabsList}
         >
-            <PrimaryButton text="+ Add Group" id="Create_Group" classes="mb-4" clickEvent={addGroup}></PrimaryButton>
+            <PrimaryButton text="+ Add Group" id="Create_Group" classes="mb-4" clickEvent={addGroup} />
             <div className="gap-5 grid grid-cols-2">
                 <GroupItem name="Downstairs Lights" devices={groupDemoDevices} id="downstairs_lights" openModal={removeGroup} />
                 <GroupItem name="Bedroom Lights" devices={groupDemoDevices} id="bedroom_lights" openModal={removeGroup} />
