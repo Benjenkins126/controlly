@@ -29,11 +29,10 @@ const StepTwo = () => {
                 <img src={logo} alt="Controlly Logo" className="w-96 block mx-auto" draggable="false" />
                 <SetupCard title="Step 2 - Core Configuration">
                     <div className="px-12">
-                        <p className="leading-6 text-sm mt-6 text-black/50 font-sans font-normal">These details help setup the core application to your specification.</p>
                         <PrimaryAlert>If you do not want to control your home remotely, do not enter a domain.</PrimaryAlert>
                         <form>
                             <TextInput label="Home Name" type="text" id="StepTwo_Name" name="StepTwo_Name" />
-                            <DomainSelection label="Home Domain" id="StepTwo_Domain" name="StepTwo_Domain" domain=".mc-controlly.com" />
+                            <DomainSelection label="Home Domain" id="StepTwo_Domain" name="StepTwo_Domain" domain=".my-controlly.com" />
                             <Select label="Timezone" id="StepTwo_Timezone" name="StepTwo_Timezone" options={timezoneList} />
                         </form>
                     </div>
