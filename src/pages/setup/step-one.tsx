@@ -41,7 +41,7 @@ const StepOne = () => {
                             Your integrations manager is running
                             </SetupHealthItem>
                         </div>
-                        <button className="mt-2.5 font-medium text-white font-sans text-sm bg-black/30 px-4 py-2 rounded">
+                        <button className={"pulseBtn overflow-hidden relative transition-all duration-300 ease-in-out mt-2.5 font-medium text-white font-sans text-sm bg-black/30 px-4 py-2 rounded"}>
                             Re-Run Checks
                         </button>
                     </div>

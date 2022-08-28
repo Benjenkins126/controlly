@@ -25,7 +25,7 @@ const Login = () => {
                         </div>
                         <CardSpacer />
                         <CardFooter>
-                            <PrimaryButton type="submit" id="Login_Submit" text="Sign In" />
+                            <PrimaryButton type="submit" id="Login_Submit" text="Sign In" classes="float-left" />
                             <TextButton text="Trouble Signing In?" href="https://docs.controlly.co.uk" />
                         </CardFooter>
                     </form>

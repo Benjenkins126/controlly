@@ -23,7 +23,7 @@ const GroupItem = (props: GroupItemProps) => {
             <div className="row-span-1 border-r border-black/10 pr-4 relative">
                 <h4 className="font-sans font-medium text-lg">{props.name}</h4>
                 <h6 className="text-xs text-black/50 font-sans font-medium">{props.devices ? props.devices.length : '0'} Devices</h6>
-                <div className="w-12 h-12 bg-black/10 rounded-full text-center text-2xl cursor-pointer my-3">
+                <div className="pulseBtn w-12 h-12 bg-black/10 rounded-full text-center text-2xl cursor-pointer my-3 overflow-hidden relative transition-all duration-300 ease-in-out hover:bg-black/20">
                     <FontAwesomeIcon icon={faPowerOff} className="pt-3" />
                 </div>
                 <div className="absolute bottom-0 left-0 right-4">

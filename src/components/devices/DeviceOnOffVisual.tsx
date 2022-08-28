@@ -31,7 +31,7 @@ const DeviceOnOffVisual = (props: DeviceOnOffVisualProps) => {
             <div className="pt-5">
                 <img src={props.image} alt={props.name + " Icon"} draggable="false" className="w-10 float-left" />
                 <h4 className="inline-block text-lg font-sans font-medium pt-1.5 px-2">{props.name} <span className="text-black/50 text-xs relative -top-0.5 left-0.5 cursor-pointer"><FontAwesomeIcon icon={faPen} /></span></h4>
-                <div className="float-right w-12 h-12 bg-black/10 rounded-full text-center text-2xl relative -top-1 cursor-pointer">
+                <div className="pulseBtn overflow-hidden transition-all duration-300 ease-in-out hover:bg-black/20 float-right w-12 h-12 bg-black/10 rounded-full text-center text-2xl relative -top-1 cursor-pointer">
                     <FontAwesomeIcon icon={faPowerOff} className="pt-3" />
                 </div>
                 <p onClick={handleDropdown} className="text-black/40 text-xs font-sans font-medium mt-6 text-center cursor-pointer">Advanced Details <FontAwesomeIcon icon={deviceOpen ? faAngleDown : faAngleRight} /></p>
