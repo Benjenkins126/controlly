@@ -15,7 +15,7 @@ const StepOne = () => {
     });
 
     return (
-        <main className="bg-backgroundColor h-full w-full">
+        <main className="bg-backgroundColor h-full w-full animate__animated animate__fadeIn">
             <div className="pt-24 pb-18">
                 <img src={logo} alt="Controlly Logo" className="w-96 block mx-auto" draggable="false" />
                 <SetupCard title="Welcome to your new Smart Home!">

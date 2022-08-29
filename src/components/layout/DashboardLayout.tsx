@@ -27,7 +27,7 @@ interface TabObject {
 
 const DashboardLayout = (props: DashboardLayoutProps) => {
     return (
-        <main className="w-full h-full flex flex-row overflow-hidden">
+        <main className="w-full h-full flex flex-row overflow-hidden animate__animated animate__fadeIn">
             <Sidebar active={props.active} />
             <section className="basis-main bg-bgContent overflow-y-scroll">
                 <Navbar />

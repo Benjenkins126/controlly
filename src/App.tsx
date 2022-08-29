@@ -1,7 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
+import PageLoader from './components/layout/PageLoader';
 import Main from './router/Main';
 
 function App() {
+
+  const [pageLoaded, setPageLoaded] = useState(false);
 
   const createRipple = (event: any) => {
     const button = event.currentTarget;
@@ -26,10 +29,13 @@ function App() {
     for(const button of buttons) {
       button.addEventListener("click", createRipple);
     }
-  });
+
+    setPageLoaded(true);
+  }, [pageLoaded]);
 
   return (
     <>
+      <PageLoader show={!pageLoaded} />
       <Main />
     </>
   );

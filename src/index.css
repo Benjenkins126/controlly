@@ -285,3 +285,45 @@ span.ripple {
         opacity: 0;
     }
 }
+
+.circleLoader {
+    animation: rotate 2s linear infinite;
+    transform-origin: center center;
+    stroke: #6747e8;
+}
+
+.rotatePath {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    animation: dash 1.5s ease-in-out infinite;
+    stroke-linecap: round;
+}
+
+.loaderTranslate {
+    transform: translateY(-50%);
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
+
+.pageLoader {
+    --animate-delay: .1s;
+}

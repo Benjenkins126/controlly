@@ -9,7 +9,7 @@ const PermissionError = () => {
     });
 
     return (
-        <main className="bg-backgroundColor h-full w-full">
+        <main className="bg-backgroundColor h-full w-full animate__animated animate__fadeIn">
             <div className="pt-44 pb-10">
                 <img src={logo} alt="Controlly Logo" className="w-96 block mx-auto" draggable="false" />
                 <h1 className="text-white font-sans font-extrabold text-center pt-20 text-2xl">Permission Denied</h1>

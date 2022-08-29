@@ -14,7 +14,7 @@ const Login = () => {
     });
 
     return (
-        <main className="bg-backgroundColor h-full w-full">
+        <main className="bg-backgroundColor h-full w-full animate__animated animate__fadeIn">
             <div className="pt-44 pb-10">
                 <img src={logo} alt="Controlly Logo" className="w-96 block mx-auto" draggable="false" />
                 <SetupCard title="Sign In">
