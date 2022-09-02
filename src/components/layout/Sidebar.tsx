@@ -2,6 +2,7 @@ import SidebarCategory from "./Sidebar/SidebarCategory";
 import SidebarItem from "./Sidebar/SidebarItem";
 
 import logo from "../../assets/img/controlly_sidebar_logo.svg";
+import LogoutIcon from "../../assets/img/categories/logout-icon.svg";
 import DashboardsIcon from "../../assets/img/categories/dashboards-icon.svg";
 import DevicesIcon from "../../assets/img/categories/devices-icon.svg";
 import GroupsIcon from "../../assets/img/categories/groups-icon.svg";
@@ -17,14 +18,22 @@ import MarketplaceIcon from "../../assets/img/categories/marketplace-icon.svg";
 import ReportIssueIcon from "../../assets/img/categories/report-issue-icon.svg";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
+import { faAngleDown, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import SidebarDropdown from "./Sidebar/SidebarDropdown";
+import { useState } from "react";
 
 interface SidebarProps {
     active?: string;
 }
 
 const Sidebar = (props: SidebarProps) => {
+
+    const [sidebarUserMenuOpen, setSidebarUserMenuOpen] = useState(false);
+
+    const handleSidebarUserMenu = () => {
+        sidebarUserMenuOpen ? setSidebarUserMenuOpen(false) : setSidebarUserMenuOpen(true);
+    }
+
     let emailAddress = "c7afd37a8d3e826035a982e70b4f9f63";
 
     return (
@@ -32,13 +41,19 @@ const Sidebar = (props: SidebarProps) => {
             <div className="border-b border-white/10 h-nav">
                 <img src={logo} alt="Controlly Logo" className="py-7 mx-auto" draggable="false" />
             </div>
-            <div className="border-b border-white/10 px-5 h-nav cursor-pointer">
+            <div className="border-b border-white/10 px-5 cursor-pointer" onClick={handleSidebarUserMenu}>
                 <img src={"https://gravatar.com/avatar/" + emailAddress} alt="Ben J's Icon" draggable="false" className="rounded-full bg-purpleControlly w-12 float-left mt-5" />
-                <div className="inline-block mt-5 ml-3">
+                <div className={`inline-block mt-5 ml-3`}>
                     <p className="text-white font-sans font-semibold">Ben Jenkins</p>
                     <p className="text-white/50 font-sans font-medium text-sm">Administrator</p>
                 </div>
-                <span className="text-2xl text-white/75 float-right mt-7"><FontAwesomeIcon icon={faAngleDown} /></span>
+                <span className="text-2xl text-white/75 float-right mt-7"><FontAwesomeIcon icon={sidebarUserMenuOpen ? faAngleDown : faAngleRight} /></span>
+                
+                <div className={`relative border-t border-white/10 transition-all ease-out duration-1000 ${sidebarUserMenuOpen ? 'h-auto opacity-100 pb-3 mt-5 pt-2' : 'opacity-0 h-0 pb-0 mt-0 pt-5'}`}>
+                    <div className="relative -left-5 -right-5">
+                        <SidebarItem active={false} name="Logout" route="/logout" icon={LogoutIcon} />
+                    </div>
+                </div>
             </div>
             {/* User Logged In */}
             <div className="pb-8">

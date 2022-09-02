@@ -17,6 +17,7 @@ import EditGroup from '../pages/Edit-Group';
 import Automations from '../pages/Automations';
 import AutomationLogs from '../pages/Automation-Logs';
 import Widgets from '../pages/Widgets';
+import DisplayControllers from '../pages/Display-Controllers';
 
 const Main = () => {
     return (
@@ -37,6 +38,7 @@ const Main = () => {
             <Route path='/automations' element={<Automations />} />
             <Route path='/automation-logs' element={<AutomationLogs />} />
             <Route path='/widgets' element={<Widgets />} />
+            <Route path='/display-controllers' element={<DisplayControllers />} />
             <Route path='/permission-error' element={<PermissionError/>} />
         </Routes>
     );

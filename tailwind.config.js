@@ -12,9 +12,11 @@ module.exports = {
     extend: {
       width: {
         '558': '34.875rem',
+        '950': '1050px',
       },
       height: {
         'nav': '87px',
+        'changelog': '558px',
       },
       colors: {
         backgroundColor: '#1C133B',
