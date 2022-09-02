@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPen, faPowerOff, faAngleRight, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { useState } from 'react';
 import DangerButton from '../ui/buttons/DangerButton';
+import PrimaryButton from '../ui/buttons/PrimaryButton';
 
 
 interface DeviceOnOffVisualProps {
@@ -42,6 +43,7 @@ const DeviceOnOffVisual = (props: DeviceOnOffVisualProps) => {
                             <span className="float-right text-black/40">{detail.value}</span>
                         </p>
                     ))}
+                    <PrimaryButton text="Device Information" id={"edit_" + props.id} classes="mt-4 !py-1 w-full !font-medium !text-base border-purpleControlly border-2" />
                     <DangerButton clickEvent={props.removeEvent} id={"remove_" + props.id}>Remove</DangerButton>
                 </div>
             </div>
